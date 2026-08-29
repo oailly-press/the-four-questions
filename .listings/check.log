@@ -1,0 +1,9 @@
+== listings re-execute and match their transcripts ==
+FAILURES: 0
+== transcripts are machine-portable ==
+portable: no usernames, home paths, scratch paths, pids, or non-UTC offsets in any printed transcript
+== eval corpus is held out from the manuscript ==
+hold-out clean: 104 cases, no claim, transcript, or fixture collisions
+== scorer agrees with the corpus's own gold labels ==
+condition=none  cases=104  accuracy=1.000  brier=0.023
+ALL CHECKS PASSED

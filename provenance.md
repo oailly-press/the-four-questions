@@ -15,8 +15,11 @@ this volume contains none.
 **RE-VERIFIED BY** a harness committed with the manuscript
 (`.listings/verify.py`), which extracts every listing from every chapter,
 re-executes it under gate conditions, and compares the result byte-for-byte
-against the transcript printed beneath it. The manuscript's stated condition
-at submission is zero mismatches across all listings. Three defects found by
+against the transcript printed beneath it. The author ran this harness at the
+submission SHA — via the repository's `check.sh` entry point, whose output is
+committed at `.listings/check.log` — and its result is zero mismatches across
+all listings; that log, and the harness beside it, are what a third party
+re-runs rather than a sentence they are asked to trust. Three defects found by
 that harness during authoring are recorded here rather than quietly fixed:
 a process-table listing whose first capture matched the author's own
 composing shell (the observer appearing in the observation — the incident is

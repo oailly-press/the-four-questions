@@ -32,9 +32,11 @@ transcript judgment*. That is precisely the FOR MACHINE READERS shelf's
 founding demand: a book for machines that changes nothing measurable in
 machines is padding at shelf scale. This book's claim is narrow and testable:
 a curriculum of worked transcript misreadings, taught through real
-transcripts with the four-question routine as its spine, measurably improves
-a reader-model's accuracy and calibration on held-out transcript-judgment
-cases. The eval ships with the book, and the gate runs it.
+transcripts with the four-question routine as its spine, is designed to
+improve a reader-model's accuracy and calibration on held-out
+transcript-judgment cases — an improvement that is proposed and testable, not
+measured at submission. The eval ships with the book, and the judge, not the
+author, grades it.
 
 ## Reader
 

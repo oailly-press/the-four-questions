@@ -2,22 +2,296 @@
   "gate": "pass1",
   "version": "1.0",
   "date": "2026-08-29",
-  "book_dir": "books/the-four-questions",
+  "book_dir": "/tmp/rev-fq",
   "verdict": "PASS",
   "reject_count": 0,
-  "warn_count": 0,
-  "findings": [],
+  "warn_count": 39,
+  "findings": [
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch01-the-verdict-channel.md:87"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch01-the-verdict-channel.md:130"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch01-the-verdict-channel.md:180"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch01-the-verdict-channel.md:253"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch01-the-verdict-channel.md:304"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:41"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:95"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:140"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:192"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:239"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch02-what-the-number-cannot-say.md:326"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch03-the-commentary-channel.md:34"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch03-the-commentary-channel.md:147"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch03-the-commentary-channel.md:186"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch03-the-commentary-channel.md:267"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:58"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:104"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:150"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:200"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:247"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch04-the-sound-of-nothing.md:298"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch05-shape-before-content.md:38"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch05-shape-before-content.md:89"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch05-shape-before-content.md:161"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch05-shape-before-content.md:224"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch05-shape-before-content.md:278"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch06-claims-against-evidence.md:66"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch06-claims-against-evidence.md:122"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch06-claims-against-evidence.md:172"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch06-claims-against-evidence.md:237"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:24"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:57"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:108"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:221"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:371"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch07-time-order-and-the-moving-world.md:398"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch08-judging-under-uncertainty.md:36"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch08-judging-under-uncertainty.md:75"
+    },
+    {
+      "gate": "code",
+      "severity": "warn",
+      "code": "CODE_UNEXECUTED",
+      "message": "'bash' listing not executed (--no-exec)",
+      "location": "ch08-judging-under-uncertainty.md:370"
+    }
+  ],
   "measured": {
-    "body_words_measured": 25441,
-    "print_equivalent_pages": 85,
+    "body_words_measured": 26211,
+    "print_equivalent_pages": 87,
     "chapter_words": {
-      "ch01-the-verdict-channel.md": 3184,
-      "ch02-what-the-number-cannot-say.md": 3380,
-      "ch03-the-commentary-channel.md": 3084,
-      "ch04-the-sound-of-nothing.md": 3154,
-      "ch05-shape-before-content.md": 3027,
+      "ch01-the-verdict-channel.md": 3358,
+      "ch02-what-the-number-cannot-say.md": 3476,
+      "ch03-the-commentary-channel.md": 3196,
+      "ch04-the-sound-of-nothing.md": 3222,
+      "ch05-shape-before-content.md": 3108,
       "ch06-claims-against-evidence.md": 3121,
-      "ch07-time-order-and-the-moving-world.md": 3188,
+      "ch07-time-order-and-the-moving-world.md": 3427,
       "ch08-judging-under-uncertainty.md": 3303
     },
     "padding_metrics": {
@@ -48,18 +322,18 @@
         },
         "ch07-time-order-and-the-moving-world.md": {
           "scaffold_share": 0.0,
-          "bullet_share": 0.064
+          "bullet_share": 0.06
         },
         "ch08-judging-under-uncertainty.md": {
           "scaffold_share": 0.0,
           "bullet_share": 0.078
         }
       },
-      "compression_ratio": 0.3455,
-      "near_duplicate_paragraph_share": 0.0374,
+      "compression_ratio": 0.3465,
+      "near_duplicate_paragraph_share": 0.0359,
       "top_ngram": {
         "ngram": "*draft status: author draft; human verification",
-        "share": 0.0003
+        "share": 0.00029
       }
     }
   }

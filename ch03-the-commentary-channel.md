@@ -284,8 +284,8 @@ step 3 done
 ```
 
 The note about step 2 appears *before step 1*. No time machine is
-involved — buffering is. By longstanding C-library convention that most
-runtimes inherit, stderr is unbuffered or line-buffered — its lines leave
+involved — buffering is. By longstanding C-library convention (see
+`setvbuf(3)`), stderr is unbuffered or line-buffered — its lines leave
 the process promptly — while stdout, when it feeds a pipe rather than a
 terminal, is block-buffered: lines accumulate in a buffer and land
 wholesale when it flushes, here at exit. So the three stdout lines
@@ -293,6 +293,17 @@ arrived together, late, and the prompt stderr line beat them all. The
 merged transcript's order is the order of *arrival at the capture point*,
 not the order of emission, and the two agree only within a single
 channel. Across channels, order testifies to almost nothing.
+
+One precondition, because this demonstration is language-specific and the
+book preaches pinning conditions. The `setvbuf(3)` rule describes C stdio;
+the `python3 steps.py 2>&1 | cat` listing above interleaves the way it does
+only under a *default* CPython pipe, whose `print()` is interpreter-buffered
+rather than governed directly by `setvbuf`. Run the same program with
+`python3 -u` or `PYTHONUNBUFFERED=1` and stdout is line-buffered, the block
+no longer lands wholesale at exit, and the interleaving changes — so read the
+demonstration as being about a block-buffered runtime, not about Python as
+such. When a claim turns on stream order, the buffering mode of the producing
+runtime is part of the shape, not a detail beneath it.
 
 The misreading this breeds is causal narration: a reader sees the note
 first and reports "the run began by falling back, then proceeded through

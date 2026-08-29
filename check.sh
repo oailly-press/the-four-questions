@@ -16,7 +16,7 @@ set -e
 cd "$(dirname "$0")"
 
 echo "== listings re-execute and match their transcripts =="
-python3 .listings/verify.py | tail -1
+verify_out=$(python3 .listings/verify.py); echo "$verify_out" | tail -1
 
 echo "== transcripts are machine-portable =="
 python3 .listings/check_portable.py

@@ -361,6 +361,65 @@ the commands, not just their output. The commands are where the contracts
 live, and contracts are the only thing that turns an observation about the
 past into a claim about the moment of action.
 
+### Worked TOCTOU, captured live
+
+Two demonstrations, same lesson.
+
+**Atomic create closes the gap.** With `set -o noclobber`, create-if-absent is
+one contract — the second writer is refused by the open, not by a later hope:
+
+```bash
+rm -f slot
+( set -o noclobber; echo A > slot ) 2>errA; echo "A_status:$?"
+( set -o noclobber; echo B > slot ) 2>errB; echo "B_status:$?"
+echo "final:$(cat slot)"
+echo "B_refused_on_stderr:$([ -s errB ] && echo yes || echo no)"
+```
+
+```output
+A_status:0
+B_status:1
+final:A
+B_refused_on_stderr:yes
+```
+
+The refusal is not narrated after the fact; it is the open failing. `B_status:1`
+is the shell's report that `noclobber` blocked the redirection, and the
+non-empty `errB` (bash writes `cannot overwrite existing file` to it — the exact
+prefix and line number vary by shell and invocation, so the listing checks only
+that the diagnostic exists, not its wording) is chapter 3's channel confirming
+it. The winner is decided by the kernel-level exclusive open, not by a later
+test the loser could have raced.
+
+**Stale check-then-act loses deterministically.** The operator records
+"absent", a concurrent writer fills the path during the gap, and the operator
+still acts on the old observation:
+
+```bash
+rm -f slot3
+if [ ! -e slot3 ]; then OBS=absent; else OBS=present; fi
+echo "check:$OBS"
+echo racer > slot3                    # concurrent writer during the gap
+if [ "$OBS" = absent ]; then echo winner > slot3; echo "write_status:$?"; fi
+echo "final:$(cat slot3)"
+```
+
+```output
+check:absent
+write_status:0
+final:winner
+```
+
+`write_status:0` **supports** "the write syscall succeeded." It is
+**insufficient** for "the write was safe against concurrent creators," and
+the final bytes (`racer` overwritten by `winner`, or the reverse under a
+different schedule) are the residue of a race, not of a contract. Read the
+command lines: only an atomic exclusive create, a lock with a defined owner,
+or a compare-and-swap turns the gap into a single verdict channel. A separate
+check followed by a separate act remains evidence of hope under concurrency —
+even when every status is zero and a single quiet machine "usually" gets away
+with it.
+
 ## Instants, durations, and the output that spans a window
 
 Every transcript in this chapter so far has been treated as a photograph,
