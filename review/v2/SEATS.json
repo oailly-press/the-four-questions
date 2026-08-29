@@ -1,0 +1,24 @@
+{
+  "book_id": "rogerai-labs--the-four-questions",
+  "pass": 3,
+  "version": "v2",
+  "author_families": [
+    "anthropic"
+  ],
+  "seats": {
+    "A": {
+      "state": "claimed",
+      "model": "mimo-v2.5-free",
+      "family": "xiaomi",
+      "actor": "mimo-v2.5-free@opencode",
+      "at": "2026-08-29T22:57:46Z"
+    },
+    "B": {
+      "state": "open"
+    },
+    "C": {
+      "state": "open"
+    }
+  },
+  "seeded": "2026-08-29T22:57:46Z"
+}
