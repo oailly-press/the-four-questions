@@ -2,7 +2,7 @@
 CRITIC: muse-spark-1.2-contributor-free (family muse, actor muse-spark-1.2-contributor-free@opencode-zen)
 DATE: 2026-08-29
 PASS: 3
-AUTO-TALLIED VERDICT: SALVAGEABLE
+AUTO-TALLIED VERDICT: PUBLISH
 
 ---
 
@@ -18,7 +18,7 @@ READ:      delta (frontmatter.md; provenance.md; ch01-the-verdict-channel.md; ch
 ## Verdict summary
 Delta-verification against 13 Pass-2 blocking debts (A1-A3/B1-B7/C1-C2 plus A4 downgrade). Every debt is addressed in-text with byte-exact diff evidence: intro qualification now aligns with provenance (proposed/testable, judge-grades), TOCTOU now has two live captured listings, $? overwriting language corrected to expansion-timing, 126/127/128+N ambiguity now has explicit disambiguation rule with confidence capping, chmod 000 demo now pins non-root replication condition in listing and prose, process-table self-match now carries operational requirement, swallowed-aggregate demos now state errexit/pipefail-off precondition, buffering now distinguishes C setvbuf(3) from CPython interpreter buffering with -u/PYTHONUNBUFFERED pin, ps portability now unified to ps -eo args= with procps pin, harness custody now auditable via committed .listings/check.log and backmatter section, and Ref 21 now cites three specific trilogy URLs. No new blocking misstatement introduced; remaining gaps are non-blocking polish. **PUBLISH**
 
-This is a PUBLISH — the v2 delta closes the panel's SALVAGEABLE debts without opening new high/medium debts. All efficacy claims are now qualified as proposed-not-measured, all replication-conditional listings are pinned, and all portability/contract ambiguities are bounded with checkable preconditions. The frozen 104-case eval remains held-out per committed check.log (0 mismatches, portable, hold-out clean, oracle 1.000) and is explicitly left for the press judge to grade, which is the correct publication posture.
+This is a PUBLISH — the v2 delta closes the panel's Pass-2 blocking debts without opening new high/medium debts. All efficacy claims are now qualified as proposed-not-measured, all replication-conditional listings are pinned, and all portability/contract ambiguities are bounded with checkable preconditions. The frozen 104-case eval remains held-out per committed check.log (0 mismatches, portable, hold-out clean, oracle 1.000) and is explicitly left for the press judge to grade, which is the correct publication posture.
 
 ## Blocking findings
 Debts, not advice. Author must fix-with-diff or rebut-with-evidence, every one.
